@@ -1,0 +1,203 @@
+html {
+    font-size: 18px;
+}
+
+body {
+    background-color: lightsalmon;
+    margin: 0;
+}
+
+header,
+footer,
+.blockquote {
+    background-color: teal;
+}
+
+/* header */
+
+header ul,
+footer ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+}
+
+header li,
+footer li{
+    margin: 1.5rem 3rem 0.5rem 3rem;
+}
+
+header a,
+footer a {
+    color: lightsalmon;
+    text-decoration: none;
+}
+
+header {
+    margin-bottom: 10rem;
+}
+
+/* heading */
+
+.heading {
+    text-align: center;
+    background-color: rgba(1, 1, 1, 0.5);
+    color: coral;
+    max-width: 100%;
+    padding: 0.75rem 0;
+    margin-bottom: 10rem;
+}
+
+/* description */
+.description {
+    margin-left: 1rem;
+}
+
+.description h2 {
+    color: yellow;
+}
+
+.description p {
+    color: white;
+}
+
+/* events */
+
+.events-description {
+    color: teal;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 5rem;
+}
+
+.events {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 3rem;
+}
+
+.one, .two, .three {
+    text-align: center;
+    flex: 1;
+}
+
+.events img {
+    max-width: 100%;
+}
+
+.events figcaption {
+    text-align: center;
+    color: teal;
+}
+
+/* blockquote */
+
+.blockquote {
+    padding-bottom: 5rem;
+    margin-bottom: 3rem;
+}
+
+blockquote {
+    font-style: italic;
+    font-size: 2.5rem;
+    color: yellow;
+    margin: 0 0 1rem 1rem;
+    padding-top: 1.5rem;
+}
+
+.blockquote figcaption {
+    color: yellow;
+    margin-left: 1rem;
+    font-weight: 200;
+}
+
+/* partner */
+
+.partner-heading h2 {
+    text-align: center;
+    color: teal;
+}
+
+.partner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 3rem;
+}
+
+.partner img {
+    max-width: 100%;
+}
+
+.partner figcaption {
+    text-align: center;
+    color: teal;
+}
+
+/* results */
+
+.results {
+    background-color: teal;
+    color: lightsalmon;
+    padding: 2rem 0;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}
+
+.results-text {
+    margin-left: 1rem;
+}
+
+.results a {
+    color: white;
+}
+
+.join {
+    text-align: center;
+    color: yellow;
+    font-size: 2rem;
+}
+
+.container {
+    display: flex;
+    width: 50%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.four {
+    max-width: 100%;
+    height: auto;
+    flex: 1;
+}
+
+@media only screen and (max-width: 1024px) {
+    .events,
+    .partner {
+        display: inline-flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .one, .two, .three {
+        flex: 1 1 100%;
+        margin: 2rem 0;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    header ul,
+    footer ul{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    header {
+        margin-bottom: 2.75rem;
+        padding-bottom: 1rem;
+    }
+}
